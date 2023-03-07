@@ -1,0 +1,307 @@
+p{
+    font-family: Roboto,Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+body{
+    margin: 0px;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: rgb(248, 248, 248);
+}
+.Thumbnail{
+    width: 100%;
+}
+.title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.author{
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+    margin-bottom: 5px;
+}
+.stats{
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+.Video-Grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+@media (max-width:900px){
+    .Video-Grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:901px) and (min-width:1169px){
+    .Video-Grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:1170px){
+    .Video-Grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (min-width:1170px){
+    .title{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .stats{
+        font-size: 14px;
+    }
+}
+
+.Video-info-Grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+
+}
+.Profile-Pic{
+    width: 36px;
+    border-radius: 25px;
+}
+.Thumbnail-Pic{
+    margin-bottom: 8px;
+    position: relative;
+
+}
+.Video-Time{
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-family: Roboto,Arial;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 4px;
+    bottom: 8px;
+    right: 5px;
+    border-radius: 3px;
+}
+.Header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(209, 207, 207);
+    z-index: 100;
+}
+.Left-Section{
+    display: flex;
+    align-items: center;
+}
+.Right-Section{
+    margin-right: 20px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.Middle-Section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 30px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+.Search{
+    flex: 1;
+    height: 34px;
+    padding-left: 10px;
+    font-size: 16px;
+    border:1px solid rgb(180, 180, 180);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+.Search::placeholder{
+    font-family: Roboto,Arial;
+    font-size: 16px;
+}
+.Search-Button{
+    width: 20px;
+}
+.Ham{
+    width: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.You{
+    width: 93px;
+}
+.Se{
+    width: 66px;
+    height: 38px;
+    background-color: rgb(241, 241, 241);
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(180, 180, 180);
+    margin-left: -1px;
+    margin-right: 10px;
+}
+.Se , .Vo , .Upload-icon , .Apps-Ic, .Not-Div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.Se .Tool , .Vo .Tool , .Upload-icon .Tool , .Apps-Ic .Tool , .Not-Div .Tool{
+    font-family: Roboto,Arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 12px;
+    border-radius: 2px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.Se:hover .Tool , .Vo:hover .Tool , .Upload-icon:hover .Tool , .Apps-Ic:hover .Tool , .Not-Div:hover .Tool{
+    opacity: 1;
+}
+.Vo{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(241, 241, 241);
+}
+.Voice-Button{
+    height: 24px;
+}
+.Up{
+    height: 24px;
+}
+.App{
+    height: 24px;
+}
+.Not{
+    height: 24px;
+}
+.Not-Div{
+    position: relative;
+}
+.Notify{
+    position: absolute;
+    background-color: rgb(192, 2, 2);
+    color: white;
+    top: -2px;
+    right: -4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-family: Roboto,Arial;
+}
+.Pr{
+    height: 32px;
+    border-radius: 16px;
+}
+.Sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    width: 72px;
+    background-color: white;
+    z-index: 200;
+    padding-top: 5px;
+}
+
+.SideBar-Link{
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.SideBar-Link:hover{
+    background-color: rgb(225, 225, 225);
+}
+.SideBar-Link img{
+    height: 24px;
+    margin-bottom: 4px;
+}
+.SideBar-Link div{
+    font-family: Roboto,Arial;
+    font-size: 10px;
+}
+.A-Link:link{
+    text-decoration: none;
+}
+.A-Link{
+    color: black;
+}
+.Channel-Pic{
+    position: relative;
+}
+.Inn{
+    position: absolute;
+    width: 180px;
+    height: 60px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    bottom: -70px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+.Inn-Img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.Inn-P1{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: black;
+}
+.Inn-P2{
+    font-size: 13px;
+    font-family: Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: black;
+}
+.Channel-Img-Div{
+    margin-left: 8px;
+}
+.Inn-Div{
+    margin-left: 5px;
+}
+.Channel-Pic:hover .Inn{
+    opacity: 1;
+}
